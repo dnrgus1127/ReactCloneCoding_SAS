@@ -6,6 +6,7 @@ const Container = styled.div`
   float: left;
   margin-right : 1.5rem;
   /* font-weight: 400; */
+  width: 0 auto;
 
 `
 const A = styled.a`
