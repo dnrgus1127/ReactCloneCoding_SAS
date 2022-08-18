@@ -7,17 +7,19 @@ import SearchIcon from '../../assets/icons/iconmonstr-search-thin.svg'
 import BuyIcon from '../../assets/icons/iconmonstr-checkout-8.svg'
 
 const Container = styled.div`
-  width: 100%;
+  width: 0 auto;
   padding: 2.5rem 4.5rem 2.5rem 4.5rem;
   margin: 0 auto;
+  
 `
 
 const RightContainer = styled.div`
-    width: 33%;
+    /* width: 33%; */
 
 `
 
 const LeftContainer = styled.div`
+    /* position: relative; */
     float: right;
     
 `
