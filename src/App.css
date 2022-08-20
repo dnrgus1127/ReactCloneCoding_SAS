@@ -7,3 +7,32 @@
 /* div {
     border: black solid 1px;
 } */
+
+
+@charset "utf-8";
+
+@font-face  {
+    font-family: "NotoSansKr_Black";
+    src: url("./assets/fonts/NotoSansKRBlack.otf")
+}
+
+@font-face  {
+    font-family: "NotoSansKr_Bold";
+    src: url("../src/assets/fonts/NotoSansKR-Bold.otf")
+}
+
+@font-face  {
+    font-family: "vitroCore";
+    src: url("../src/assets/fonts/vitroCore.otf")
+}
+
+@font-face  {
+    font-family: "OpenSans_VariableFont";
+    src: url("../src/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf")
+}
+
+
+@font-face  {
+    font-family: "Noe Display-medium";
+    src: url("../src/assets/fonts/Noe\ Display-medium.ttf")
+}

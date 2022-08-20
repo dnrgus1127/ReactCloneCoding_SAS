@@ -6,6 +6,7 @@ const Container = styled.div`
     width: 0 auto;
     margin-top: 3px;
     margin-right: 1.5rem;
+    
 `
 
 const Icon = styled.img`

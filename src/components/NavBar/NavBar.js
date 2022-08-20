@@ -8,19 +8,25 @@ import BuyIcon from '../../assets/icons/iconmonstr-checkout-8.svg'
 
 const Container = styled.div`
   width: 0 auto;
+  display: flex;
+  /* position: fixed; */
   padding: 2.5rem 4.5rem 2.5rem 4.5rem;
   margin: 0 auto;
   
 `
 
 const RightContainer = styled.div`
-    /* width: 33%; */
+    width: 33%;
+    display: flex;
 
 `
 
 const LeftContainer = styled.div`
-    /* position: relative; */
+    width: 33%;
     float: right;
+    display: flex;
+    justify-content: flex-end;
+
     
 `
 
