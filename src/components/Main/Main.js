@@ -3,6 +3,8 @@ import styled from 'styled-components'
 import Image from '../../assets/images/image-asset.jpeg'
 import Image2 from '../../assets/images/image-asset2.jpeg'
 import Image3 from '../../assets/images/image-asset3.png'
+import Image4 from '../../assets/images/image-asset3.jpeg'
+
 
 const Container = styled.article`
     width: 100%;
@@ -153,9 +155,32 @@ const Padding = styled.div`
     padding: ${({padding}) => {return padding}};
 `
 
-const TextCenter = styled.div`
+const Center = styled.div`
+    width: 100%;
     align-items: center;
     text-align: center;
+`
+
+const BlackButton = styled.a`
+    background-color: #1F1F1F;
+    padding: 1rem 2.4rem 1rem 2.4rem;
+    color: white;
+    font-weight: 500;
+    font-family: 'OpenSans_VariableFont';
+    text-decoration: none;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    font-style: normal;
+
+    &:hover {
+        background-color: #3d3c3c;
+        transition: 0.25s ease-in-out;
+    }
+`
+
+const Section = styled.section`
+    display: flex;
+    padding: 3vw 4vw 3vw;
 `
 
 
@@ -225,14 +250,35 @@ const Main = () => {
                 <SizedBox height={"8rem"}></SizedBox>
                 <SubContainer>
                     <Container75>
-                        <TextCenter>
+                        <Center>
                             <PNoe>See eNourish On Squarespace</PNoe>
-                        </TextCenter>
+                        </Center>
                     </Container75>
                 </SubContainer>
-
+                <SubContainer>
+                    <Container75>
+                        <Center>
+                            <BlackButton href='https://www.naver.com'>WWW.NAVER.COM</BlackButton>
+                        </Center>
+                    </Container75>
+                </SubContainer>
+                <SubContainer>
+                    <Center>
+                        <Img src={Image4} width={"50%"}></Img>
+                        <SizedBox height={"5rem"}></SizedBox>
+                        <PNoe>Get The Influence<br/>Template For Squarespace</PNoe>
+                    </Center>
+                </SubContainer>
+                <Padding padding={"1rem"}></Padding>
+                <SubContainer>
+                    <Center><PNoe>Related Articles</PNoe></Center>
+                    <Center><PNoe>Popular Posts</PNoe></Center>
+                </SubContainer>
             </MainContents>
-
+            {/* 페이지 이동 a */}
+            <Section>
+                
+            </Section>
         </Container>
     )
 }
