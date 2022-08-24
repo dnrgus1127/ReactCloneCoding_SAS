@@ -9,7 +9,7 @@ import Image4 from '../../assets/images/image-asset3.jpeg'
 const Container = styled.article`
     width: 100%;
     height: 100vh;
-    padding: 4vw;
+    padding: 3vw;
     margin: 0 auto;
     
 `
@@ -58,6 +58,15 @@ const A = styled.a`
     color: black;
     font-family: 'OpenSans_VariableFont';
     font-size: 1rem;
+
+`
+
+const ANoe = styled.a`
+    text-decoration-line: none;
+    /* text-decoration: none; */
+    color: black;
+    font-family: 'Noe Display-medium';
+    font-size: 1.5rem;
 
 `
 const TextAtag = styled.a`
@@ -262,6 +271,7 @@ const Main = () => {
                         </Center>
                     </Container75>
                 </SubContainer>
+                <Padding padding={"2rem"}/>
                 <SubContainer>
                     <Center>
                         <Img src={Image4} width={"50%"}></Img>
@@ -277,9 +287,14 @@ const Main = () => {
             </MainContents>
             {/* 페이지 이동 a */}
             <Section>
-                
+                <LeftContainer>
+                    <PNoe><ANoe href='/'>High-End Custom Squearespace Design For Keynote Speaker Seth Mattision</ANoe></PNoe>
+                    <A><PNoe>123</PNoe></A>
+                </LeftContainer>
+                <RightContainer></RightContainer>
             </Section>
         </Container>
+
     )
 }
 
