@@ -1,5 +1,6 @@
 const globalTheme = {
-    colorBackground : '#f7edd880'
+    // colorBackground : '#f7edd880'
+    colorBackground : '#F2EEEB'
 }
 
 

@@ -5,9 +5,17 @@ import Image2 from '../../assets/images/image-asset2.jpeg'
 import Image3 from '../../assets/images/image-asset3.png'
 import Image4 from '../../assets/images/image-asset3.jpeg'
 import Image5 from '../../assets/images/business-mission-statement.png'
+import Logo from '../../assets/images/go+live+logo.png'
+import NavTree from './NavTree'
 
 
 
+const LogoImg = styled.img`
+    width: 12rem;
+    max-width: 100%;
+    /* max-height: 32px; */
+
+`
 
 const OutContainer = styled.div`
     width:100%;
@@ -78,11 +86,13 @@ const LeftContainer = styled.div`
 const RightContainer = styled.div`
     width: ${({ width }) => { return width; }};
     max-width: 1300px;
+    
+    
+    
 `
 
 const A = styled.a`
     text-decoration-line: none;
-    /* text-decoration: none; */
     color: black;
     font-family: 'OpenSans_VariableFont';
     font-size: 1rem;
@@ -105,10 +115,11 @@ const H1 = styled.h1`
 const P = styled.p`
     font-weight: 900;
     font-family: 'OpenSans_VariableFont';
-    color: ${({color})=>{return color}};
+    color: ${({ color }) => { return color }};
 
 `
 const PNoe = styled(Pinterface)`
+    /* font-size,text-align interface */
     /* width: 80%; */
     font-family: 'Noe Display-medium';
     /* font-size: 2rem; */
@@ -224,17 +235,41 @@ const BlackConatainer = styled.div`
 `
 
 const WhiteText = styled.p`
-    font-family: ${({font}) => {
+    font-family: ${({ font }) => {
         return font;
     }};
     color: white;
-    font-size : ${({fontsize}) => {return fontsize}};
+    font-size : ${({ fontsize }) => { return fontsize }};
 `
 
 const FooterContainer = styled.div`
-    height:100vh;
+    width: 100%;
     background-color: white;
+    padding: 4rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    /* display: flex; */
 `
+
+const BlockContainer = styled.div`
+    display: block;
+`
+const FooterText = styled.p`
+    font-size: calc((.9 - 1) * 1.2vw + 1rem);
+    font-weight: 400;
+
+    &.something{
+        text-decoration-line: none;
+        text-decoration: none;
+        color: black;
+    }
+`
+const AtagNone = styled.a`
+     text-decoration-line: none;
+        text-decoration: none;
+        color: black;
+`
+
 
 
 
@@ -360,7 +395,25 @@ const Main = () => {
                 </FlexContainer>
             </BlackConatainer>
             <FooterContainer>
-
+                <FlexContainer>
+                    <LeftContainer width="46%" >
+                        <LogoImg src={Logo}></LogoImg>
+                        <PText fontSize={"calc((1.4 - 1) * 1.2vw + 0.8rem)"}>Launch your website within days (not months or years) with our easy-to-use Squarespace Website Templates.</PText>
+                    </LeftContainer>
+                    <RightContainer width="60%">
+                        <FlexContainer>
+                            <NavTree />
+                            <NavTree />
+                            <NavTree />
+                        </FlexContainer>
+                    </RightContainer>
+                </FlexContainer>
+                <BlockContainer>
+                    <Padding padding="1.5rem"></Padding>
+                    <Center>
+                        <FooterText><AtagNone href='/'>golive.co</AtagNone>|<AtagNone href='/'>hello@golivehq.co</AtagNone>|Based in Los Angeles, CA & Beyond | Privacy Policy |<AtagNone href='/'>Terms & Conditions</AtagNone> </FooterText>
+                    </Center>
+                </BlockContainer>
             </FooterContainer>
         </OutContainer>
 
